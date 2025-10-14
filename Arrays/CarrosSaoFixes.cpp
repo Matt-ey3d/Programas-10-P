@@ -19,7 +19,7 @@ int main()
 
 		if (num < 0 || num>2)
 		{
-			cout << "Número inválido - escreva um número entre 0 e 2\n";
+			cout << "NÃºmero invÃ¡lido - escreva um nÃºmero entre 0 e 2\n";
 		}
 		else
 		{
@@ -39,7 +39,7 @@ int main()
 			cin >> sair;
 		}
 	} while (sair == "n");
-	cout << "Beijos na bunda, até segunda\n";
+	cout << "Beijos na bunda, atÃ© segunda\n";
 
 	return 0;
 }
