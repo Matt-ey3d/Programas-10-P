@@ -19,7 +19,7 @@ int main()
 	int vitimas[6] = {}, i, j, teimoso = 0, salvos = 0;
 	string OK;
 	char salvar;
-	string falas[11] = {
+	string falas[13] = {
 		"EU TENHO UMA FAMÍLIA!",//1
 		"Pressiona o botão! PRESSIONA A PUTA DO BOTÃO!!",//2
 		"Por favor deixa-me viver!!!",//3
@@ -29,10 +29,12 @@ int main()
 		"Ah, muito obrigado.",//7
 		"Eu dou-te dinheiro, fama, TUDO! POR FAVOR NÃO ME MATES!!!",//8
 		"Não me mates! Quem é que vai dar comida ao meu cão???",//9
-		"Já não tinha amigos mesmo.",//10
-		"...Faz o que quiseres."//11
+		"Já não tinha amigos mesmo. Eram todos meros colegas.",//10
+		"...Faz o que quiseres.",//11
+		"Eu tenho um Bardo Mudo para salvar!!! DEIXA-ME VIVER!!!!",//12
+		"Não me mates!! Eu deixo-te fazer piadas com o meu nome!!!!"//13
 	};
-	string pessoas[11] = {
+	string pessoas[13] = {
 		"Joaquim Tavares Costa",//1
 		"Fernando Manuel dos Santos Anastácio",//2
 		"Beatriz Cardoso Sousa",//3
@@ -43,7 +45,9 @@ int main()
 		"Carlos Jardel [REDACTED] Miguel",//8
 		"Afonso dos Santos Espírito Santo",//9
 		"Rodrigo Henrique Ferreira Franco Neves dos Santos Galante",//10
-		"Lily Bernardino Silvestre"//11
+		"Lily Bernardino Silvestre",//11
+		"Miguel Florêncio Wheeler",//12
+		"José Wesley Daniel Bonga"//13
 	};
 
 	/*Carregar a tecla «Enter», apenas quando aparecer o texto "(Enter)", para passar o texto.
@@ -51,7 +55,7 @@ int main()
 
 	for (i = 0; i < 6; ++i)
 	{
-		vitimas[i] = rand() % 11;
+		vitimas[i] = rand() % 13;
 		for (j = 0; j < i; ++j)
 		{
 			if (vitimas[i] == vitimas[j])
