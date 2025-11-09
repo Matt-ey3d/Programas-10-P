@@ -5,9 +5,11 @@
 #include <time.h>
 #include <windows.h>
 #include <chrono>
+#include <conio.h>
+#include <thread>
 
 using namespace std;
-using namespace chrono;
+using namespace std::chrono;
 
 int main()
 {
@@ -17,8 +19,6 @@ int main()
 	int vitimas[6] = {}, i, j, teimoso = 0, salvos = 0;
 	string OK;
 	char salvar;
-	auto inicio = steady_clock::now();
-	auto tempo = seconds(13);
 	string falas[11] = {
 		"EU TENHO UMA FAMÍLIA!",//1
 		"Pressiona o botão! PRESSIONA A PUTA DO BOTÃO!!",//2
@@ -123,7 +123,7 @@ int main()
 	system("cls");
 
 	cout << "Há uma arma carregada à frente do lugar do carrosel que for sorteado." << endl;
-	cout << "A arma tem que disparar pelo menos 3 vezes." << endl;
+	cout << "A arma vai sempre disparar." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
@@ -256,36 +256,52 @@ int main()
 		Sleep(1000);
 		system("cls");
 
-		do
+		auto inicio = steady_clock::now();
+		cout << i + 1 << "ª pessoa:" << endl;
+		cout << pessoas[vitimas[i]] << endl << "«" << falas[vitimas[i]] << "»" << endl;
+
+		while(true)
 		{
-			cout << pessoas[vitimas[i]] << endl << "«" << falas[vitimas[i]] << "»" << endl;
-			cin >> salvar;
-			if (salvar == '0')
+			auto agora = chrono::steady_clock::now();
+			auto tempo = chrono::duration_cast<std::chrono::seconds>(agora - inicio).count();
+			if (tempo >= 13)
 			{
-				if (salvos < 3)
-				{
-					++salvos;
-					cout << "Salvaste " << pessoas[vitimas[i]] << "...\nA arma vai disparar para cima." << endl;
-					Sleep(2500);
-				}
-				else
-				{
-					cout << "Já salvaste 3 pessoas. Os outros têm que morrer." << endl;
-					Sleep(2500);
-				}
+				break;
+			}
+			if (_kbhit())
+			{
+				salvar = _getch();
+				break;
+			}
+		}
+
+		if (salvar == '0')
+		{
+			if (salvos < 3)
+			{
+				++salvos;
+				cout << "Salvaste " << pessoas[vitimas[i]] << "...\nA arma vai disparar para cima." << endl;
+				Sleep(2500);
 			}
 			else
 			{
-				cout << "A arma vai disparar..." << endl;
+				cout << "Já salvaste 3 pessoas. Os outros têm que morrer." << endl;
 				Sleep(2500);
 			}
-		} while (steady_clock::now() - inicio < tempo);
+		}
+		else
+		{
+			cout << "A arma vai disparar..." << endl;
+			Sleep(2500);
+		}
+
 		system("cls");
 		cout << "\33[31mBANG!\33[0m" << endl;
 		Sleep(1000);
 		cout << "A arma disparou." << endl;
 		Sleep(2500);
 	}
+
 
 	system("cls");
 
@@ -294,7 +310,10 @@ int main()
 	cout << "Salvaste " << salvos << " pessoas." << endl;
 	cout << "(Enter)";
 	cin.ignore();
+	system("cls");
 
+	cout << "..." << endl;
+	cout << "Salvaste " << salvos << " pessoas." << endl;
 	cout << "Ele/a(s) agradecem-te." << endl;
 	cout << "(Enter)";
 	cin.ignore();
