@@ -10,12 +10,12 @@ int main()
 
 	int troca = 0, aux, num[10] = { 15,7,54,12,1,2,5,23,14,4 };
 
-	cout << "Os números estão desarumados\n";
+	cout << "Os nÃºmeros estÃ£o desarumados\n";
 	for (int j = 0; j < 10; ++j)
 	{
 		cout << num[j] << " ";
 	}
-	cout << "\nVou arrumá-los\n\n";
+	cout << "\nVou arrumÃ¡-los\n\n";
 	do {
 		troca = 0;
 			for (int i = 0; i < 9; ++i)
@@ -35,7 +35,7 @@ int main()
 			}
 	} while (troca > 0);
 	
-	cout << "\nOs números ordenados são:\n";
+	cout << "\nOs nÃºmeros ordenados sÃ£o:\n";
 	for (int l = 0; l < 10; ++l)
 	{
 		cout << num[l] << " ";
