@@ -10,18 +10,18 @@ int main()
 	
 	do
 	{
-		cout << "Escreve um número:\n";
+		cout << "Escreve um nÃºmero:\n";
 		cin >> num;
 		if (num % 2 == 0)
 		{
-			cout << "O número é par!\n";
+			cout << "O nÃºmero Ã© par!\n";
 		}
 		else
 		{
-			cout << "O número é ímpar!\n";
+			cout << "O nÃºmero Ã© Ã­mpar!\n";
 		}
 	}while (num != 0);
-	cout << "Inseriste o número 0! Já foste!";
+	cout << "Inseriste o nÃºmero 0! JÃ¡ foste!";
 
 	return 0;
 }
