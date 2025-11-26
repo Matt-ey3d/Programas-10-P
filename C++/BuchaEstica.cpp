@@ -12,7 +12,7 @@ int main()
 
 	do
 	{
-		cout << "Inserir número:\n";
+		cout << "Inserir nÃºmero:\n";
 		cin >> num;
 
 		if (num < menor && num != 0)
@@ -25,9 +25,9 @@ int main()
 		}
 	} while (num != 0);
 
-	cout << "O número maior é " << maior << "\n";
-	cout << "E o número menor é " << menor << "\n";
-	cout << "Como não gosto de zeros, acabou o programa!\n";
+	cout << "O nÃºmero maior Ã© " << maior << "\n";
+	cout << "E o nÃºmero menor Ã© " << menor << "\n";
+	cout << "Como nÃ£o gosto de zeros, acabou o programa!\n";
 
 	return 0;
 }
