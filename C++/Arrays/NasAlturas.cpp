@@ -13,15 +13,15 @@ int main()
 
 	for (i = 0; i < 30; i++)
 	{
-		cout << "Dá-me a idade da pessoa:" << i + 1 << "\n";
+		cout << "DÃ¡-me a idade da pessoa:" << i + 1 << "\n";
 		cin >> idades[i];
-		cout << "Dá-me a altura em cm da pessoa:" << i + 1 << "\n";
+		cout << "DÃ¡-me a altura em cm da pessoa:" << i + 1 << "\n";
 		cin >> alturas[i];
 		soma = soma + alturas[i];
 	}
 
 	media = soma / 4;
-	cout << "A média de alturas de todos é " << media << " cm\n";
+	cout << "A mÃ©dia de alturas de todos Ã© " << media << " cm\n";
 
 	for (i = 0; i < 30; i++)
 	{
@@ -31,7 +31,7 @@ int main()
 		}
 	}
 
-	cout << "Você tem " << contador << " alunos com 13 anos ou mais e a altura inferior a " << media;
+	cout << "VocÃª tem " << contador << " alunos com 13 anos ou mais e a altura inferior a " << media;
 
 	return 0;
 }
