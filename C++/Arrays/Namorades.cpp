@@ -18,28 +18,28 @@ int main()
 	{
 		cout << "Diz-me o nome do teu interesse amoroso\n";
 		cin >> namorades[i];
-		cout << "Agora diz-me a alcunha que lhe dás\n";
+		cout << "Agora diz-me a alcunha que lhe dÃ¡s\n";
 		cin >> nomes[i];
 	}
 
 	do
 	{
-		cout << "Agora diz o número da pessoa querida\n";
-		cout << "E eu digo quem é\n";
+		cout << "Agora diz o nÃºmero da pessoa querida\n";
+		cout << "E eu digo quem Ã©\n";
 		cin >> num;
 		num = num - 1;
 
 		if (num >= 0 && num < 5)
 		{
-			cout << "O número corresponde a " << namorades[num] << "\n";
-			cout << "E a alcunha que lhe dás é " << nomes[num] << "\n";
+			cout << "O nÃºmero corresponde a " << namorades[num] << "\n";
+			cout << "E a alcunha que lhe dÃ¡s Ã© " << nomes[num] << "\n";
 
 			cout << "Deseja sair? (s/n)\n";
 			cin >> sair;
 		}
 		else
 		{
-			cout << "Essa criatura é-me desconhecida\n";
+			cout << "Essa criatura Ã©-me desconhecida\n";
 		}
 	} while (sair != 's');
 
