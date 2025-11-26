@@ -11,13 +11,13 @@ int main()
 	int escolha;
 	double num1, num2;
 
-	cout << "Queres fazer uma soma (1), subtração (2), multiplicação (3), ou divisão (4)?\n";
+	cout << "Queres fazer uma soma (1), subtraÃ§Ã£o (2), multiplicaÃ§Ã£o (3), ou divisÃ£o (4)?\n";
 	cin >> escolha;
-	cout << "Então dá-me um número\n";
+	cout << "EntÃ£o dÃ¡-me um nÃºmero\n";
 	cin >> num1;
-	cout << "E agora outro número\n";
+	cout << "E agora outro nÃºmero\n";
 	cin >> num2;
-	cout << "Sorry, só dá 2 números\n";
+	cout << "Sorry, sÃ³ dÃ¡ 2 nÃºmeros\n";
 
 	switch (escolha)
 	{
@@ -34,7 +34,7 @@ int main()
 		cout << num1 << " / " << num2 << " = " << num1 / num2 << "\n";
 		break;
 	default:
-		cout << "Infelizmente, o utilizador deste programa não sabe seguir instruções simples, tente novamente mais tarde\n";
+		cout << "Infelizmente, o utilizador deste programa nÃ£o sabe seguir instruÃ§Ãµes simples, tente novamente mais tarde\n";
 		break;
 	}
 
