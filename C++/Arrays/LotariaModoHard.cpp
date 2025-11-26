@@ -64,22 +64,22 @@ int main()
 	cout << "\nLOTARIA!!!!!\n";
 	for (i = 0; i < 5; ++i)
 	{
-		cout << "Escreva um número entre 1 e 50:\n";
+		cout << "Escreva um nÃºmero entre 1 e 50:\n";
 		cin >> guess;
 		if (guess == lotaria[i])
 		{
 			++certos;
 		}
 	}
-	cout << "Números certos: " << certos << "\n";
-	cout << "Números da lotaria:" << "\n";
+	cout << "NÃºmeros certos: " << certos << "\n";
+	cout << "NÃºmeros da lotaria:" << "\n";
 	for (int l = 0; l < 5; ++l)
 	{
 		cout << lotaria[l] << "\n";
 	}
 	if (certos == 5)
 	{
-		cout << "PARABÉNS!!!!!! GANHASTE 1 MILHÃO DE BITCOIN!!!!!!!!!!!!!!!";
+		cout << "PARABÃ‰NS!!!!!! GANHASTE 1 MILHÃƒO DE BITCOIN!!!!!!!!!!!!!!!";
 	}
 
 	return 0;
