@@ -20,40 +20,40 @@ int main()
 	string OK;
 	char salvar;
 	string falas[13] = {
-		"EU TENHO UMA FAMÕLIA!",//1
-		"Pressiona o bot„o! PRESSIONA A PUTA DO BOT√O!!",//2
+		"EU TENHO UMA FAM√çLIA!",//1
+		"Pressiona o bot√£o! PRESSIONA A PUTA DO BOT√ÉO!!",//2
 		"Por favor deixa-me viver!!!",//3
 		"...",//4
 		"NUNCA MAIS TE CHATEIO NA VIDA! PROMETO!!",//5
 		"AAAAAAAAAAAAAAAA!!!!!!!!!",//6
 		"Ah, muito obrigado.",//7
-		"Eu dou-te dinheiro, fama, TUDO! POR FAVOR N√O ME MATES!!!",//8
-		"N„o me mates! Quem È que vai dar comida ao meu c„o???",//9
-		"J· n„o tinha amigos mesmo. Eram todos meros colegas.",//10
+		"Eu dou-te dinheiro, fama, TUDO! POR FAVOR N√ÉO ME MATES!!!",//8
+		"N√£o me mates! Quem √© que vai dar comida ao meu c√£o???",//9
+		"J√° n√£o tinha amigos mesmo. Eram todos meros colegas.",//10
 		"...Faz o que quiseres.",//11
 		"Eu tenho um Bardo Mudo para salvar!!! DEIXA-ME VIVER!!!!",//12
-		"N„o me mates!! Eu deixo-te fazer piadas com o meu nome!!!!"//13
+		"N√£o me mates!! Eu deixo-te fazer piadas com o meu nome!!!!"//13
 	};
 	string pessoas[13] = {
 		"Joaquim Tavares Costa",//1
-		"Fernando Manuel dos Santos Anast·cio",//2
+		"Fernando Manuel dos Santos Anast√°cio",//2
 		"Beatriz Cardoso Sousa",//3
 		"Mateus Bernardino Silvestre",//4
 		"Afonso Rodrigues Pacheco",//5
-		"Cau„ Morato Bianchini Galliac",//6
-		"Emanuel Bruno ArsÈnio da Silva",//7
+		"Cau√£ Morato Bianchini Galliac",//6
+		"Emanuel Bruno Ars√©nio da Silva",//7
 		"Carlos Jardel [REDACTED] Miguel",//8
-		"Afonso dos Santos EspÌrito Santo",//9
+		"Afonso dos Santos Esp√≠rito Santo",//9
 		"Rodrigo Henrique Ferreira Franco Neves dos Santos Galante",//10
 		"Lily Bernardino Silvestre",//11
-		"Miguel FlorÍncio Wheeler",//12
-		"JosÈ Wesley Daniel Bonga"//13
+		"Miguel Flor√™ncio Wheeler",//12
+		"Jos√© Wesley Daniel Bonga"//13
 	};
 
-	/*Carregar a tecla ´Enterª, apenas quando aparecer o texto "(Enter)", para passar o texto.
-	Se n„o aparecer o texto "(Enter)", esperar; demora poucos segundos para o texto desaparecer.*/
+	/*Carregar a tecla ¬´Enter¬ª, apenas quando aparecer o texto "(Enter)", para passar o texto.
+	Se n√£o aparecer o texto "(Enter)", esperar; demora poucos segundos para o texto desaparecer.*/
 
-	for (i = 0; i < 6; ++i)
+	for (i = 0; i < 6; ++i) //Escolher v√≠timas (mas ningu√©m se repete)
 	{
 		vitimas[i] = rand() % 13;
 		for (j = 0; j < i; ++j)
@@ -67,12 +67,12 @@ int main()
 
 
 
-	cout << "Ol·." << endl;
+	cout << "Ol√°." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
 
-	cout << "Ol·." << endl;
+	cout << "Ol√°." << endl;
 	cout << "Eu quero jogar um jogo." << endl;
 	cout << "(Enter)";
 	cin.ignore();
@@ -98,35 +98,35 @@ int main()
 	}
 
 
-	cout << "Esta coisa esquisita e defeituosa que acabou de aparecer no teu ecr„ era suposto ser um carrosel." << endl;
+	cout << "Esta coisa esquisita e defeituosa que acabou de aparecer no teu ecr√£ era suposto ser um carrosel." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
 
-	cout << "Todas as vezes que jogas um jogo, tens sempre a opÁ„o de matar ou deixar viver o monstro ‡ tua frente." << endl;
+	cout << "Todas as vezes que jogas um jogo, tens sempre a op√ß√£o de matar ou deixar viver o monstro √† tua frente." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
 
-	cout << "Todas as vezes que jogas um jogo, tens sempre a opÁ„o de matar ou deixar viver o monstro ‡ tua frente." << endl;
-	cout << "Agora ter·s de escolher, de entre os teus amigos, quem matas e quem deixas viver." << endl;
+	cout << "Todas as vezes que jogas um jogo, tens sempre a op√ß√£o de matar ou deixar viver o monstro √† tua frente." << endl;
+	cout << "Agora ter√°s de escolher, de entre os teus amigos, quem matas e quem deixas viver." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
 
-	cout << "6 dos teus amigos est„o presos no carrosel," << endl;
+	cout << "6 dos teus amigos est√£o presos no carrosel," << endl;
 	Sleep(1500);
 	cout << "mas apenas 3 podem sair." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
 
-	cout << "H· uma arma carregada ‡ frente do lugar do carrosel que for sorteado." << endl;
+	cout << "H√° uma arma carregada √† frente do lugar do carrosel que for sorteado." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
 
-	cout << "H· uma arma carregada ‡ frente do lugar do carrosel que for sorteado." << endl;
+	cout << "H√° uma arma carregada √† frente do lugar do carrosel que for sorteado." << endl;
 	cout << "A arma vai sempre disparar." << endl;
 	cout << "(Enter)";
 	cin.ignore();
@@ -140,7 +140,7 @@ int main()
 		cout << "----*----" << endl;
 		cout << " O / \ O " << endl;
 		cout << "  / O \  " << endl;
-		cout << endl << "Lembra-te que eles n„o s„o os monstros dos jogos;" << endl;
+		cout << endl << "Lembra-te que eles n√£o s√£o os monstros dos jogos;" << endl;
 		Sleep(300);
 		system("cls");
 		cout << " O  |  O " << endl;
@@ -148,7 +148,7 @@ int main()
 		cout << "O  \*/  O" << endl;
 		cout << "___/|\___" << endl;
 		cout << " O  |  O " << endl;
-		cout << endl << "Lembra-te que eles n„o s„o os monstros dos jogos;" << endl;
+		cout << endl << "Lembra-te que eles n√£o s√£o os monstros dos jogos;" << endl;
 		Sleep(300);
 		system("cls");
 	}
@@ -160,8 +160,8 @@ int main()
 		cout << "----*----" << endl;
 		cout << " O / \ O " << endl;
 		cout << "  / O \  " << endl;
-		cout << endl << "Lembra-te que eles n„o s„o os monstros dos jogos;" << endl;
-		cout << "aquilo que tu escolheres vai ter consequÍncias." << endl;
+		cout << endl << "Lembra-te que eles n√£o s√£o os monstros dos jogos;" << endl;
+		cout << "aquilo que tu escolheres vai ter consequ√™ncias." << endl;
 		Sleep(300);
 		system("cls");
 		cout << " O  |  O " << endl;
@@ -169,8 +169,8 @@ int main()
 		cout << "O  \*/  O" << endl;
 		cout << "___/|\___" << endl;
 		cout << " O  |  O " << endl;
-		cout << endl << "Lembra-te que eles n„o s„o os monstros dos jogos;" << endl;
-		cout << "aquilo que tu escolheres vai ter consequÍncias." << endl;
+		cout << endl << "Lembra-te que eles n√£o s√£o os monstros dos jogos;" << endl;
+		cout << "aquilo que tu escolheres vai ter consequ√™ncias." << endl;
 		Sleep(300);
 		system("cls");
 	}
@@ -182,23 +182,23 @@ int main()
 	system("cls");
 
 	cout << "Tens 13 segundos para salvares cada um." << endl;
-	cout << "Escreve ´0ª cada vez que quiseres salvar alguÈm." << endl;
+	cout << "Escreve ¬´0¬ª cada vez que quiseres salvar algu√©m." << endl;
 	cout << "(Enter)";
 	cin.ignore();
 	system("cls");
 
 	cout << "Tens 13 segundos para salvares cada um." << endl;
-	cout << "Escreve ´0ª cada vez que quiseres salvar alguÈm." << endl;
+	cout << "Escreve ¬´0¬ª cada vez que quiseres salvar algu√©m." << endl;
 	cout << "QUE O JOGO COMECE." << endl;
 	Sleep(1000);
 
-	do
+	do //Se a pessoa recusar-se a jogar:
 	{
 		if (teimoso > 2)
 		{
 			cout << "\33[31m";
 		}
-		cout << "(COME«AR? [´okª])" << endl;
+		cout << "(COME√áAR? [¬´ok¬ª])" << endl;
 		cin >> OK;
 		++teimoso;
 		if (teimoso > 5 && teimoso < 10 && OK != "ok")
@@ -261,10 +261,10 @@ int main()
 		system("cls");
 
 		auto inicio = steady_clock::now();
-		cout << i + 1 << "™ pessoa:" << endl;
-		cout << pessoas[vitimas[i]] << endl << "´" << falas[vitimas[i]] << "ª" << endl;
+		cout << i + 1 << "¬™ pessoa:" << endl;
+		cout << pessoas[vitimas[i]] << endl << "¬´" << falas[vitimas[i]] << "¬ª" << endl;
 
-		while(true)
+		while(true) //"while(true){}" s√≥ pode ser utilizado se for garantido algum "break" dentro do loop
 		{
 			auto agora = chrono::steady_clock::now();
 			auto tempo = chrono::duration_cast<std::chrono::seconds>(agora - inicio).count();
@@ -272,9 +272,9 @@ int main()
 			{
 				break;
 			}
-			if (_kbhit())
+			if (_kbhit()) //Se alguma tecla for pressionada antes dos 13 segundos acabarem
 			{
-				salvar = _getch();
+				salvar = _getch(); //Salvar = tecla pressionada (sem Enter)
 				break;
 			}
 		}
@@ -289,7 +289,7 @@ int main()
 			}
 			else
 			{
-				cout << "J· salvaste 3 pessoas. Os outros tÍm que morrer." << endl;
+				cout << "J√° salvaste 3 pessoas. Os outros t√™m que morrer." << endl;
 				Sleep(2500);
 			}
 		}
@@ -323,7 +323,7 @@ int main()
 	cin.ignore();
 	system("cls");
 
-	cout << "Da prÛxima" << endl;
+	cout << "Da pr√≥xima" << endl;
 	Sleep(1500);
 	cout << "pensa outra vez ao matar o monstro." << endl;
 	cout << "(ENTER PARA ACABAR)";
