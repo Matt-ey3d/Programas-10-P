@@ -9,7 +9,7 @@ int main()
 	setlocale(LC_ALL, "Portuguese");
 
 	int num;
-	string disciplinas[5] = { "Português", "Matemática", "Inglês", "Físico-Química", "Ser um chato do caraças" };
+	string disciplinas[5] = { "PortuguÃªs", "MatemÃ¡tica", "InglÃªs", "FÃ­sico-QuÃ­mica", "Ser um chato do caraÃ§as" };
 	string sair = "n";
 
 	do
@@ -19,7 +19,7 @@ int main()
 
 		if (num < 0 || num > 4)
 		{
-			cout << "Número inválido - escreva um número entre 0 e 4\n";
+			cout << "NÃºmero invÃ¡lido - escreva um nÃºmero entre 0 e 4\n";
 		}
 		else
 		{
@@ -47,7 +47,7 @@ int main()
 			cin >> sair;
 		}
 	} while (sair == "n");
-	cout << "Beijos na bunda, até segunda\n";
+	cout << "Beijos na bunda, atÃ© segunda\n";
 
 	return 0;
 }
