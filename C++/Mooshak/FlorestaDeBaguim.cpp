@@ -8,9 +8,9 @@ int main()
 {
 	setlocale(LC_ALL, "Portuguese");
 
-	int N, K, i, ii, linhalivre;
+	int N, K, i, ii, linhalivre, possivel = 0;
 	char vazio;
-	bool possivel = false;
+	possivel = false;
 
 	cin >> N;
 	cin >> K;
@@ -28,7 +28,7 @@ int main()
 		}
 		if (linhalivre >= K)
 		{
-			possivel = true;
+			possivel = 1;
 		}
 	}
 
