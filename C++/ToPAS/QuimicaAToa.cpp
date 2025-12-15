@@ -12,71 +12,71 @@ int main()
 	setlocale(LC_ALL, "Portuguese");
 	srand(time(0));
 
-	char elemento; //ler cada caracter da fÃ³rmula quÃ­mica
-	int num; //quantidade de algarismos que tem o nÃºmero de Ã¡tomos em cada elemento, se houver
-	bool upper = false, lower = false, number = false, start = true; //se o caracter anterior Ã© maiÃºsculo/minÃºsculo/nÃºmero, e se for o inÃ­cio da fÃ³rmula
+	char elemento; //ler cada caracter da fórmula química
+	int num; //quantidade de algarismos que tem o número de átomos em cada elemento, se houver
+	bool upper = false, lower = false, number = false, start = true; //se o caracter anterior é maiúsculo/minúsculo/número, e se for o início da fórmula
 
 	do
 	{
 		cin >> elemento; //ler caracter
-		if (isupper(elemento)) //SE FOR MAIÃšSCULO
+		if (isupper(elemento)) //SE FOR MAIÚSCULO
 		{
-			if (number == false) //se nÃ£o houver nÃºmero atrÃ¡s
+			if (number == false) //se não houver número atrás
 			{
-				if (start == false) //se nÃ£o for o inÃ­cio da fÃ³rmula
+				if (start == false) //se não for o início da fórmula
 				{
 					cout << " 1" << endl;
 				}
-				else //se for o inÃ­cio da fÃ³rmula
+				else //se for o início da fórmula
 				{
-					start = false; //jÃ¡ nÃ£o Ã© o inÃ­cio da fÃ³rmula
+					start = false; //já não é o início da fórmula
 					cout << endl;
 				}
 			}
-			else //se houver nÃºmero atrÃ¡s
+			else //se houver número atrás
 			{
 				cout << endl;
 			}
-			if (upper == false) //se nÃ£o hÃ¡ maiÃºscula atrÃ¡s
+			if (upper == false) //se não há maiúscula atrás
 			{
-				upper = true; //o prÃ³ximo caracter estÃ¡ Ã  frente de uma maiÃºscula
+				upper = true; //o próximo caracter está à frente de uma maiúscula
 			}
 			cout << elemento;
-			number = false; //nÃ£o hÃ¡ nÃºmero atrÃ¡s
+			number = false; //não há número atrás
 			num = 0;
 		}
-		else if (islower(elemento)) //SE FOR MINÃšSCULO
+		else if (islower(elemento)) //SE FOR MINÚSCULO
 		{
-			lower = true; //o prÃ³ximo caracter estÃ¡ Ã  frente de uma minÃºscula
-			upper = false; //nÃ£o Ã© maiÃºscula
-			number = false; //nÃ£o Ã© nÃºmero
+			lower = true; //o próximo caracter está à frente de uma minúscula
+			upper = false; //não é maiúscula
+			number = false; //não é número
 			cout << elemento;
 		}
 		else
 		{
-			if (elemento != '.') //SE NÃƒO FOR UM PONTO (OU SEJA UM NÃšMERO)
+			if (isdigit(elemento)) //SE FOR UM NÚMERO
 			{
 				number = true;
-				if (num > 0) //se hÃ¡ mais algarismos atrÃ¡s
+				if (num > 0) //se há mais algarismos atrás
 				{
 					cout << elemento;
 				}
-				else //senÃ£o
+				else //senão
 				{
 					cout << " " << elemento;
-					++num; //adiciona 1 ao nÂº de algarismos
+					++num; //adiciona 1 ao nº de algarismos
 				}
 			}
-			else //SE FOR UM PONTO
+			else //SE FOR OUTRA COISA QUALQUER (COMO UM PONTO)
 			{
-				if (number == false) //se nÃ£o tiver nÃºmero atrÃ¡s
+				if (number == false) //se não tiver número atrás
 				{
 					cout << " 1" << endl;
 				}
 			}
-			upper = false; //nÃ£o hÃ¡ maiÃºscula
+			upper = false; //não há maiúscula
 		}
-	} while (elemento != '.'); //LER CARACTERES ENQUANTO NÃƒO CALHAR O PONTO
+	} while (elemento != '.'); //LER CARACTERES ENQUANTO NÃO CALHAR O PONTO
 
 	return 0;
 }
