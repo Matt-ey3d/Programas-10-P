@@ -1,38 +1,38 @@
 #include <iostream>
-#include <locale.h>
+#include <locale>
 #include <string>
-
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
 
-int main()
-{
-	setlocale(LC_ALL, "Portuguese");
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    int N, K, i, ii, Aux;
+    string Floresta;
+    bool Conseguiu = false;
+    cin >> N >> K;
 
-	int N, K, i, ii, linhalivre, possivel = 0;
-	char vazio;
-	possivel = false;
+    for (i = 0; i < N; i++)
+    {
+        cin >> Floresta;
+        Aux = 0;
+        for (ii = 0; ii < N; ii++)
+        {
+            if (Floresta[ii] == '.')
+            {
+                Aux++;
+                if (Aux >= K)
+                {
+                    Conseguiu = true;
+                }
+            }
+            else
+            {
+                Aux = 0;
+            }
+        }
 
-	cin >> N;
-	cin >> K;
-
-	for (ii = 0; ii < N; ++ii)
-	{
-		linhalivre = 0;
-		for (i = 0; i < N; ++i)
-		{
-			cin >> vazio;
-			if (vazio == '.')
-			{
-				++linhalivre;
-			}
-		}
-		if (linhalivre >= K)
-		{
-			possivel = 1;
-		}
-	}
-
-	cout << possivel;
-
-	return 0;
+    }
+    cout << Conseguiu << endl;
+    return 0;
 }
